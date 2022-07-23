@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap');
+
+/*
+font size: rem
+width: percentage + max width
+Padding margin: rem 
+media queries: em
+
+Overlay https://codepen.io/pradeeps4ini/pen/yLKbRqB
+
+The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900
+
+background-color: var(--pale-blue);
+*/
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+    display:flex;
+    flex-flow:column wrap;
+    justify-content: center; 
+    height:100%;
+    width:auto;
+    font-family:"Red Hat Display";
+}
+
+main{
+    display:flex;
+    flex-flow:column wrap;
+    justify-content: center; 
+    align-items: center;
+    align-content:center;
+    width: 25%;
+    min-width:420px;
+    height:auto;
+    margin: auto;
+      }
+
+header{
+  display:flex;
+  flex-flow:column wrap;
+  align-items: center;
+  border-radius:1rem;
+  background-color: var(--very-pale-blue);
+}
+
+.main-pic{
+    width:100%;
+    height:auto;
+    border-radius:1rem 1rem 0 0;
+}
+
+.order{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.listen{
+    padding: 1rem 3rem;
+    text-align: center;
+    color:var(--desaturated-blue);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.num-grid{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--very-pale-blue);
+    width:80%;
+    font-size: 0.9rem;
+    border-radius:1rem;
+}
+
+.clock{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width:15%;
+    height:auto;
+    background-color: var(--desaturated-blue);
+    border-radius:2rem;
+}
+
+.text-flex{
+    display:flex;
+    flex-flow:column wrap;
+    justify-content: space-between;
+}
+
+.annual{
+    font-weight: bold;
+}
+
+.year{
+    color:var(--desaturated-blue);
+}
+
+.change{
+    margin-left: 3rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    color:var(--bright-blue);
+    text-decoration: underline;
+}
+
+.proceed{
+    cursor: pointer;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width:80%;
+    border-radius:0.5rem;
+    background-color: var(--bright-blue);
+    color:var(--very-pale-blue);
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.cancel{
+    cursor: pointer;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    color:var(--desaturated-blue);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+footer { font-size: 11px; text-align: center; }
+
+footer a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 480px) {
+    html {
+      background-color: var(--pale-blue);
+      background-image: url(images/pattern-background-mobile.svg);
+      background-position: top;
+      background-repeat: no-repeat;
+          }
+  }
+  
+  @media screen and (min-width: 481px) {
+    html {
+        background-color: var(--pale-blue);
+        background-image: url(images/pattern-background-desktop.svg);
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+  }
